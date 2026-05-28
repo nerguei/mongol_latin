@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Mongol Latin - Nüür khuudas</title>
+  <title>Mongol Latin · Nüür khuudas</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -104,19 +104,16 @@
 
     main {
       flex: 1;
-      padding: 3.5rem 0 4rem;
+      padding: 5rem 0 4rem;
     }
 
     .hero {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 3rem;
-      align-items: center;
       margin-bottom: 5rem;
+      max-width: 800px;
     }
 
     .hero-content h1 {
-      font-size: 3.5rem;
+      font-size: 3.8rem;
       font-weight: 600;
       line-height: 1.2;
       color: #f5f7fb;
@@ -130,11 +127,12 @@
     }
 
     .hero-content p {
-      font-size: 1.2rem;
+      font-size: 1.25rem;
       color: #b0b9c6;
-      margin-bottom: 2.2rem;
+      margin-bottom: 2.5rem;
       max-width: 90%;
       font-weight: 350;
+      line-height: 1.6;
     }
 
     .btn-group {
@@ -175,40 +173,6 @@
       background-color: rgba(255, 255, 255, 0.04);
     }
 
-    .hero-visual {
-      background: #11171e;
-      border: 1px solid #2a323c;
-      border-radius: 4px;
-      padding: 2rem;
-      display: flex;
-      flex-direction: column;
-      gap: 1.8rem;
-      box-shadow: 0 20px 35px -15px rgba(0,0,0,0.5);
-    }
-
-    .sample-text {
-      font-size: 1.5rem;
-      font-weight: 500;
-      color: #d3dbe6;
-      border-left: 3px solid #5b6b7c;
-      padding-left: 1.3rem;
-    }
-
-    .sample-text small {
-      display: block;
-      font-size: 0.9rem;
-      font-weight: 400;
-      color: #768390;
-      margin-top: 0.5rem;
-      letter-spacing: 0.02em;
-    }
-
-    .latin-sample {
-      font-style: normal;
-      font-weight: 450;
-      color: #cbd5e1;
-    }
-
     .section-title {
       font-size: 1.8rem;
       font-weight: 500;
@@ -222,7 +186,7 @@
 
     .books-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 2rem;
       margin-top: 0.8rem;
     }
@@ -231,8 +195,11 @@
       background: #111820;
       border: 1px solid #1e2730;
       border-radius: 3px;
-      padding: 1.5rem 1.2rem;
+      padding: 1.8rem 1.4rem;
       transition: border-color 0.2s, background 0.2s;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
     }
 
     .book-card:hover {
@@ -241,25 +208,26 @@
     }
 
     .book-card h3 {
-      font-size: 1.25rem;
+      font-size: 1.3rem;
       font-weight: 600;
       color: #eef2f6;
-      margin-bottom: 0.4rem;
+      margin-bottom: 0.2rem;
     }
 
     .book-card .author {
       font-weight: 400;
       color: #8693a3;
-      font-size: 0.9rem;
-      margin-bottom: 1rem;
+      font-size: 0.95rem;
+      margin-bottom: 0.5rem;
     }
 
     .book-card .latin-title {
       font-size: 0.9rem;
       color: #6c7a8c;
       font-weight: 400;
-      margin-bottom: 1.2rem;
+      margin-bottom: 0.8rem;
       word-break: break-word;
+      font-style: italic;
     }
 
     .badge {
@@ -271,6 +239,7 @@
       border-radius: 2px;
       display: inline-block;
       letter-spacing: 0.03em;
+      align-self: flex-start;
     }
 
     .footer {
@@ -295,11 +264,6 @@
     }
 
     @media (max-width: 768px) {
-      .hero {
-        grid-template-columns: 1fr;
-        gap: 2.5rem;
-      }
-
       .hero-content h1 {
         font-size: 2.6rem;
       }
@@ -310,6 +274,10 @@
 
       .nav-links {
         gap: 1.5rem;
+      }
+
+      main {
+        padding: 3.5rem 0 3rem;
       }
     }
   </style>
@@ -322,7 +290,7 @@
       </a>
       <nav class="nav-links">
         <a href="#" class="active">Nüür</a>
-        <a href="#">Nomudd</a>
+        <a href="#">Nomuud</a>
         <a href="#">Shüleg</a>
         <a href="#">Duunuud</a>
         <a href="#">Tukhai</a>
@@ -337,24 +305,11 @@
           Mongol khel <br><span class="accent">latin üsgeer</span>
         </h1>
         <p>
-          Mongolyn uran zokhiol, duu shüleg, tüükhen bichwerüüdiig latin khörwüülgeer unshij, taashaakh tsugluulga.
+          Mongolyn uran zokhiol, duu shüleg, tüükhen bichwerüüdiig latin khörwüülgeer unshij, taashaakh tsugluulga. Bükh bichwer standart latin dürmin daguu khörwüülegdsen.
         </p>
         <div class="btn-group">
           <a href="#" class="btn btn-primary">Tsugluulga üzekh</a>
           <a href="#" class="btn">Latin garyn awlaga</a>
-        </div>
-      </div>
-      <div class="hero-visual">
-        <div class="sample-text">
-          «Тэнгэрээс заяат төвдүүрхэг Монгол»
-          <small>Кирилл үсэг</small>
-        </div>
-        <div class="sample-text latin-sample">
-          «Tengerēs zayat tövdüürxeg Mongol»
-          <small>Mongol latin</small>
-        </div>
-        <div style="color:#5f6b7a; font-size:0.9rem; margin-top:0.3rem;">
-          Бүх бичвэрт стандарт латин дүрмийг баримталсан.
         </div>
       </div>
     </section>
@@ -363,9 +318,9 @@
       <h2 class="section-title">Ontslokh nomuud</h2>
       <div class="books-grid">
         <div class="book-card">
-          <h3>Book</h3>
-          <div class="author">Author</div>
-          <span class="badge">Badge</span>
+          <h3>Nom</h3>
+          <div class="author">Zokhiolch</div>
+          <span class="badge">Töröl</span>
         </div>
       </div>
     </section>
